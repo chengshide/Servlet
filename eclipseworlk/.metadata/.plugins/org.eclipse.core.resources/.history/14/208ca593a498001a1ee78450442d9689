@@ -1,0 +1,31 @@
+package entity;
+
+import java.util.HashMap;
+
+//购物车类
+public class Cart {
+
+	//购买商品的集合
+	private HashMap<Items,Integer> goods;
+	//购物车的总金额
+	private double totalPrice;
+	
+	public Cart() {
+		goods = new HashMap<Items,Integer>();
+		totalPrice = 0.0;
+	}
+	
+	public HashMap<Items, Integer> getGoods() {
+		return goods;
+	}
+	public void setGoods(HashMap<Items, Integer> goods) {
+		this.goods = goods;
+	}
+	public double getTotalPrice() {
+		return totalPrice;
+	}
+	public void setTotalPrice(double totalPrice) {
+		this.totalPrice = totalPrice;
+	}
+	
+}
